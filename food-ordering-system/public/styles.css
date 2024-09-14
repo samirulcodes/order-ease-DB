@@ -1,0 +1,207 @@
+/* page refresh animation */
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+
+
+body {
+    font-family: Arial, sans-serif;
+    /* background-color: #f8f9fa; */
+    background: linear-gradient(135deg, #f0f3f4, #d7e1ec);
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: url('food-ordering-system/public/img/qr-bgc.jpg') no-repeat center center fixed;
+    background-size: cover;
+    animation: fadeInAnimation ease 3s; /* page refresh animation */
+    animation-fill-mode: forwards;
+}
+
+
+.container {
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    padding: 50px;
+    /* width: 50%; */
+    text-align: center;
+    background: url('/food-ordering-system/public/img/qr-bgc.jpg') no-repeat center center fixed;
+    background-size: cover;
+    /* background: transparent; */
+}
+
+.text {
+    font-size: 40px;
+    /* color: rgb(234, 229, 229);
+    text-shadow: 2px 2px 4px #322d2d; */
+    color: white;
+    text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+}
+
+.text-1 {
+    color: rgb(234, 229, 229);
+    text-shadow: 2px 2px 4px #322d2d;
+    font-size: 30px;
+}
+
+.text-1 span {
+    color: coral;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    /* text-shadow: 2px 2px 4px #322d2d; */
+    font-size: 25px;
+    font-weight: 700;
+
+}
+
+/* 
+.container2{
+    /* background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    width: 300px;
+    margin-left: 35px;
+    background: url('') no-repeat center center fixed;
+    background-size: cover;
+}  */
+
+.btn {
+    /* color: rgb(161, 159, 159); */
+    color: rgb(165, 162, 162);
+    text-shadow: 1px 1px 1px #322d2d;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 50px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 0px 8px 15px rgba(0, 123, 255, 0.3);
+    transition: all 0.3s ease;
+}
+
+.btn:hover {
+    color: #000;
+    background-color: rgb(161, 159, 159);
+    box-shadow: 0px 12px 20px rgba(0, 123, 255, 0.4);
+    transform: translateY(-3px);
+}
+
+.btn:active {
+    background-color: #00408d;
+    box-shadow: 0px 5px 10px rgba(0, 123, 255, 0.2);
+    transform: translateY(0);
+}
+
+#cameraView {
+    margin-top: 20px;
+    width: 100%;
+}
+
+#reader {
+    border-radius: 10px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.table-selection {
+    margin: 20px 0;
+}
+
+select {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ced4da;
+    width: 100%;
+}
+
+#foodMenu {
+    margin-top: 20px;
+}
+
+.food-item {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+#cart {
+    margin-top: 20px;
+    background-color: #b4bdc6;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+#cartItems {
+    margin-top: 10px;
+    text-align: left;
+}
+
+#orderHistory {
+    margin-top: 20px;
+    text-align: left;
+}
+
+.hidden {
+    display: none;
+}
+
+h3 {
+    margin-bottom: 10px;
+    color: #343a40;
+}
+
+#message {
+    margin-top: 20px;
+    font-size: 16px;
+    color: #07ff41;
+    animation: fadeOut 10s forwards;
+}
+
+@keyframes fadeOut {
+    0% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+
+.back-btn {
+    position: absolute;
+    bottom: 20px;
+    /* Distance from the bottom */
+    left: 10px;
+    position: fixed;
+
+}
+
+#btn-1 {
+    /* transform: translateY(5); */
+    color: #000;
+    background-color: #fff;
+    text-shadow: 1px 1px 1px #322d2d;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 500;
+    padding: 10px;
+    border-radius: 20px;
+
+}
+
+#btn-1:hover {
+    color: #fff;
+    background-color: #000;
+    box-shadow: 0px 12px 20px rgba(0, 123, 255, 0.4);
+    transform: translateY(-3px);
+}
